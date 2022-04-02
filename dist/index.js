@@ -8471,11 +8471,13 @@ var __webpack_exports__ = {};
 const core = __nccwpck_require__(4244);
 const github = __nccwpck_require__(4933);
 
-async function main() {
-    console.log("Hello lol");
+async function main(name) {
+    console.log(`Hello ${name}`);
+    core.setOutput('poop', '💩');
 }
 
-main();
+const name = core.getInput("name");
+main(name);
 })();
 
 module.exports = __webpack_exports__;
