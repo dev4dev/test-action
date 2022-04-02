@@ -1,5 +1,13 @@
 name: Test Action
 description: Just testing shit out
+inputs:
+  name:
+    description: Name
+    required: true
+    default: Lol
+outputs:
+  poop:
+    description: some shit
 runs:
   using: 'node16'
   main: 'dist/index.js'

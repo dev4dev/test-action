@@ -1,8 +1,10 @@
 const core = require('@actions/core');
 const github = require('@actions/github');
 
-async function main() {
-    console.log("Hello lol");
+async function main(name) {
+    console.log(`Hello ${name}`);
+    core.setOutput('poop', '💩');
 }
 
-main();
+const name = core.getInput("name");
+main(name);
