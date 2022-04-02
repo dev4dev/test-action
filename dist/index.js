@@ -8476,7 +8476,9 @@ async function main(name) {
     console.log(`Hello ${name}`);
     core.setOutput('poop', '💩');
 
-    octokit.rest.pulls.create({
+    await octokit.rest.pulls.create({
+        owner: github.context.repo.owner,
+        repo: github.context.repo.repo,
         title: `Hello ${name}`,
         body: "Lorem shitsum "
     });
