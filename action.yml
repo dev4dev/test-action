@@ -4,6 +4,9 @@ inputs:
   name:
     description: Name
     required: true
+  token:
+    description: github token
+    required: true
 outputs:
   poop:
     description: some shit
