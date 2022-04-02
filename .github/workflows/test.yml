@@ -1,0 +1,11 @@
+name: Test Action
+
+on: push
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: My Action
+        uses: dev4dev/test-action@master
+    
