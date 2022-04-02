@@ -11,6 +11,7 @@ jobs:
         uses: dev4dev/test-action@master
         with:
           name: Sponge Bob
+          token: ${{ secrets.GITHUB_TOKEN }}
       
       - name: Get Output
         run: echo ${{ steps.work.outputs.poop }}
